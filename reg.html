@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="css/new_file.css" rel="stylesheet">
+        <title>婺源乡村游游</title>
+    </head>
+
+    <body>
+        <div class="Box">
+        			<ul>
+        				<li>婺源县， 古徽州一府六县之一，今属江西省上饶市下辖县。位于江西省东北部，赣、浙、皖 三省交界处</li>
+        				<li>江西婺源地处赣东北，与皖南、浙西毗邻，已被国内外誉为“中国最美丽的农村”</li>
+        				<li>它的美， 除了山川之迷人</li>
+        				<li>峰峦、幽谷、溪涧、林木、奇峰、异石、古树、驿道、亭台、廊桥、溶洞和 鸟类奇多之外</li>
+        				<li>就是古村落古民居建筑堪称九州大地之一绝</li>
+        				<li>被外界誉为“中国最美的乡村“</li>
+        			</ul>
+        		</div>
+	<script type="text/javascript">
+					var speed = -1;
+					var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+					var item = document.getElementsByTagName('li');    //获取li元素集合
+					list.innerHTML = list.innerHTML + list.innerHTML;
+					list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+					function move() {
+						if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+							list.style.left = 0 + "px";
+						}
+						list.style.left = list.offsetLeft + speed + 'px';
+					}
+					setInterval(move, 30);     //每隔30ms移动一次
+	</script>
+        <div class="header">
+        	<div class="search-container">
+        		<form action="/search" method="get">
+        			<input type="text" name="text" placeholder="请输入你需要查询的内容" class="search-input"/>
+        			<button type="submit" class="search-button">搜索</button>
+        		</form>
+        	</div>
+        </div>
+        <header>
+        		<nav>	
+        			<a href="index.html">首页</a>
+        			<a href="web1.html">景点介绍</a>
+        			<a href="web2.html">美食推荐</a>
+        			<a href="web3.html">最美乡村婺源</a>
+        			<a href="log.html">登录</a>
+        			<a href="reg.html">注册</a>
+        			<li></li>
+        			</ul>
+        		</nav>
+        	</div>
+            </header>
+            <style>
+            
+
+                .banner1 {
+                    text-align: center;
+                    font-size: 40px;
+                    height: 1000px;
+					background: url("img/6.jpg");
+                }
+
+                .banner1 input {
+                    margin-left: 20px;
+                    width: 300px;
+                    height: 40px;
+                    margin-top: 20px;
+
+                }
+
+                .banner1 button {
+                    width: 150px;
+                    height: 40px;
+                    margin-left: 20px;
+                    margin-top: 30px;
+                }
+
+                .zx input {
+                    position: relative;
+                    left: -10px;
+                    width: 200px;
+                }
+
+                .zx span {
+                    display: inline-block;
+                    width: 100px;
+                    background: #ccc;
+                    height: 40px;
+                    line-height: 40px;
+                    position: relative;
+                    left: -10px;
+                    top: 2px;
+                }
+            </style>
+            <div class="banner1">
+				注册
+                <div>
+                    账号<input type="text" name="" id="">
+                </div>
+                <div>
+                    密码<input type="text" name="" id="">
+                </div>
+                <div class="zx">
+                    验证码<input type="text" name=""> <span id="span">123</span>
+                </div>
+                <div>
+					<input type="button" value="注册" onclick="javascript:alert('恭喜您！注册成功')"/>
+					<button><a href="log.html">跳转到登陆页面</a>  </button>
+                </div>
+            </div>
+
+            <script>
+                var span = document.getElementById('span')
+                span.onclick = function () {
+                    ran()
+                }
+                ran()
+
+                function ran() {
+                    let max = 9999;
+                    let min = 1234;
+                    let num = Math.floor(Math.random() * (max - min)) + min;
+                    span.innerHTML=num
+                }
+
+
+
+
+            </script>
+
+            <div class="clear"></div>
+
+
+
+
+
+            <div class="clear"></div>
+            <footer>
+                <p></p>
+            </footer>
+            <div class="clear"></div>
+        </div>
+    </body>
+
+    </html>
