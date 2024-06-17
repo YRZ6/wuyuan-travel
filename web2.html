@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="css/new_file.css" rel="stylesheet">
+        <title>家乡旅游</title>
+    </head>
+
+    <body>
+       <div class="Box">
+       			<ul>
+       			<li>婺源县， 古徽州一府六县之一，今属江西省上饶市下辖县。位于江西省东北部，赣、浙、皖 三省交界处</li>
+       			<li>江西婺源地处赣东北，与皖南、浙西毗邻，已被国内外誉为“中国最美丽的农村”</li>
+       			<li>它的美， 除了山川之迷人</li>
+       			<li>峰峦、幽谷、溪涧、林木、奇峰、异石、古树、驿道、亭台、廊桥、溶洞和 鸟类奇多之外</li>
+       			<li>就是古村落古民居建筑堪称九州大地之一绝</li>
+       			<li>被外界誉为“中国最美的乡村“</li>
+       			</ul>
+       		</div>
+	<script type="text/javascript">
+					var speed = -1;
+					var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+					var item = document.getElementsByTagName('li');    //获取li元素集合
+					list.innerHTML = list.innerHTML + list.innerHTML;
+					list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+					function move() {
+						if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+							list.style.left = 0 + "px";
+						}
+						list.style.left = list.offsetLeft + speed + 'px';
+					}
+					setInterval(move, 30);     //每隔30ms移动一次
+	</script>
+       <div class="header">
+       	<div class="search-container">
+       		<form action="/search" method="get">
+       			<input type="text" name="text" placeholder="请输入你需要查询的内容" class="search-input"/>
+       			<button type="submit" class="search-button">搜索</button>
+       		</form>
+       	</div>
+       </div>
+       <header>
+       		<nav>	
+       			<a href="index.html">首页</a>
+       			<a href="web1.html">景点介绍</a>
+       			<a href=" ">美食推荐</a>
+       			<a href="web3.html">最美乡村婺源</a>
+       			<a href="log.html">登录</a>
+       			<a href="reg.html">注册</a>
+       			<li></li>
+       			</ul>
+       		</nav>
+       	</div>
+       </header>	
+	   <div class="web21" style="border: 1px solid black;"><strong>婺源美食概况</strong></div>
+	   <div class="web21" style="border: 1px solid black;">
+		   婺源美食的继承了古徽州的传统，菜以粉蒸、清蒸和糊菜为主要特色，味道大多带有辣味，主食多为米饭，当地产的米酒、白酒值得一尝。
+		   需要说明的是,一些婺源比较出名的地方菜,只有在一些小店或者农家才能够吃到正宗的。
+		   点菜的时候别忘了向主妇要她家自制的酶豆腐(类似于宁波的毛豆腐)、酸辣椒、腌柚子皮，爽口、解酒、下饭，这三样下饭小菜是免费赠送的，酸豆角也是好的配菜。
+		   在紫阳镇的早餐摊点上以及一些餐厅里可以买到当地的特色小吃，价格都很便宜。
+	   </div>
+	   <div class="web21" style="border: 1px solid black" ><strong>必尝美食</strong></div>
+	<div class="main web21">
+		<div class="left1">
+			<div class="box1">
+				<img src="img/美食1.jpg" alt="灰汁果" class="zheng"/>
+			<div class="text fan"><h1>灰汁果</h1>
+			<p>自婺源灰汁果，并不是一种从果树上摘下来的水果，而是一种用大米粉做成的果子糕点。这种果子由于是用稻草灰的汁水做成的，故当地人取名为婺源灰汁果。</p>
+			</div>
+			</div></div>
+		<div class="left2"><div class="box1"><img src="img/美食2.jpg" alt="汽糕" class="zheng"/>
+			<div class="text fan"><h1>汽糕</h1>
+			<p>把一块汽糕放进嘴里，轻轻一咬，筋道有嚼劲，一丝醇香留存于舌尖，令人回味无尽。婺源汽糕表面鲜香油亮，光洁透亮，中间布满了蜂窝状的气孔。</p>
+			</div>
+			</div></div>
+		<div class="mid1"><div class="box1"><img src="img/美食三.jpg" alt="茄子干" class="zheng"/>
+			<div class="text fan"><h1>茄子干</h1>
+			<p>婺源茄子干是江西省赣东北上饶市婺源县的特色小吃，它集香、辣、甜、咸多种味道为一体，口感既韧又软，且有过口忘不了。</p>
+			</div>
+			</div></div>
+			<div class="mid2">
+				<div class="box1">
+					<img src="img/美食4.jpg" alt="糖醋鹅脖" class="zheng"/>
+				<div class="text fan"><h1>糖醋鹅脖</h1>
+				<p>婺源糖醋鹅颈是一道有着吴地风味的婺源特色菜肴。婺源古属徽州，刀锋私以为全国八大菜系之一的徽菜，一定烙印着徽州人出世的奔波与归田园居的安逸</p>
+				</div>
+				</div></div>
+			<div class="right1"><div class="box1"><img src="img/美食5.jpg" alt="酒嘈鱼" class="zheng"/>
+				<div class="text fan"><h1>酒嘈鱼</h1>
+				<p>婺源酒糟鱼色泽金黄，香而不腥，肉味鲜美，开胃爽口，且久食不腻，冷热食均可。简易方便，是居家、宾馆、旅游和馈赠亲友之佳品。</p>
+				</div>
+				</div></div>
+			<div class="right2"><div class="box1"><img src="img/美食6.jpg" alt="清明果" class="zheng"/>
+				<div class="text fan"><h1>清明果</h1>
+				<p>清明果是江西、安徽、浙江、福建部分地区的汉族传统小吃，一般在清明节食用。该小吃形似饺子，外皮多用艾草或鼠鞠草做成。</p>
+				</div>
+				</div></div>
+	</div>
+    </body>
+
+    </html></html>
