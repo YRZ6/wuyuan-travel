@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="css/new_file.css" rel="stylesheet">
+        <title>家乡旅游</title>
+    </head>
+
+    <body>
+      <div class="Box">
+      			<ul>
+      				<li>婺源县， 古徽州一府六县之一，今属江西省上饶市下辖县。位于江西省东北部，赣、浙、皖 三省交界处</li>
+      				<li>江西婺源地处赣东北，与皖南、浙西毗邻，已被国内外誉为“中国最美丽的农村”</li>
+      				<li>它的美， 除了山川之迷人</li>
+      				<li>峰峦、幽谷、溪涧、林木、奇峰、异石、古树、驿道、亭台、廊桥、溶洞和 鸟类奇多之外</li>
+      				<li>就是古村落古民居建筑堪称九州大地之一绝</li>
+      				<li>被外界誉为“中国最美的乡村“</li>
+      			</ul>
+      		</div>
+	<script type="text/javascript">
+					var speed = -1;
+					var list = document.getElementsByTagName('ul')[0]; //获取ul元素
+					var item = document.getElementsByTagName('li');    //获取li元素集合
+					list.innerHTML = list.innerHTML + list.innerHTML;
+					list.style.width = item[0].offsetWidth * item.length + 'px'; //offsetWidth返回元素的宽度（包括元素宽度、内边距和边框，不包括外边距）
+					function move() {
+						if (list.offsetLeft < -list.offsetWidth / 2) {   //offsetLeft元素离父元素左边的距离
+							list.style.left = 0 + "px";
+						}
+						list.style.left = list.offsetLeft + speed + 'px';
+					}
+					setInterval(move, 30);     //每隔30ms移动一次
+	</script>
+      <div class="header">
+      	<div class="search-container">
+      		<form action="/search" method="get">
+      			<input type="text" name="text" placeholder="请输入你需要查询的内容" class="search-input"/>
+      			<button type="submit" class="search-button">搜索</button>
+      		</form>
+      	</div>
+      </div>
+      <header>
+      		<nav>	
+      			<a href="index.html">首页</a>
+      			<a href="web1.html">景点介绍</a>
+      			<a href="web2.html">美食推荐</a>
+      			<a href=" ">最美乡村婺源</a>
+      			<a href="log.html">登录</a>
+      			<a href="reg.html">注册</a>
+      			<li></li>
+      			</ul>
+      		</nav>
+      	</div>
+      </header>	
+	  <div class="web31">
+	  <!-- <video loop=-1 controls="controls" width="60%" height="300" poster="videoframe_3356.png" > -->
+		  <!-- <source src="img/婺源县_百度百科.mp4" type="video/mp4"/> -->
+		   <!-- <source src="img/婺源县_百度百科.mp4" type="video/ogg"/> -->
+	  <!-- </video> -->
+	  <div>
+		  <video src="img/江西婺源最美古村落航拍短片_哔哩哔哩_bilibili 和另外 10 个页面 - 个人 - Microsoft​ Edge 2024-06-16 21-50-20.mp4" loop=-1 controls="controls" width="800" height="300" poster="web7.jpg" autoplay="autoplay"></video>
+	  </div>
+	  </div>
+	  <div class="main box">
+		  <div class="left2">
+			  <ul class="photos">
+			  	<li><a href="" title=""><img src="img/屏幕截图 2024-06-16 214740.jpg" alt="美丽婺源" /></a></li>
+			  </ul>
+		  </div>
+		  <div class="right2">
+			  <p><strong>婺源篁岭景区</strong></p>
+			  地处石耳山脉，面积15平方公里，由索道空中揽胜、村落晒秋访古、梯田花海寻芳及乡风民俗拾趣等游览区域组合而成。 篁岭属典型山居村落，民居围绕水口呈扇形梯状错落排布。
+			  <p><strong>卧龙谷</strong></p>
+			  国家4A级旅游区－－卧龙谷风景区是一处纯自然、纯生态、纯原始的峡谷景区，是“最美乡村”的骄子。
+			  <p><strong>小桥流水人家——李坑</strong></p>
+			  李坑的建筑风格独特，是著名的徽派建筑，给人一种安静、祥和的气氛。村落群山环抱，山清水秀，风光旖旎。
+		  </div>
+	  </div>
+    </body>
+
+    </html>
